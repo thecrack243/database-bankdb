@@ -1,7 +1,7 @@
 # Banking and Transaction Management Database
 
-This PostgreSQL database is the primary deliverable for the mid-term project.
-The existing C++/Qt application is deliberately not changed; it can be considered
+This PostgreSQL database is the primary deliverable for the bankin database project.
+An existing C++/Qt or python application can be considered
 later as an optional client of this database.
 
 ## Scope and assumptions
@@ -39,11 +39,11 @@ Create a new, empty PostgreSQL database, then run these files in order with
 `psql`:
 
 ```powershell
-createdb banking_midterm
-psql -d banking_midterm -f database\01_schema.sql
-psql -d banking_midterm -f database\02_sample_data.sql
-psql -d banking_midterm -f database\03_demo_queries.sql
-psql -d banking_midterm -f database\04_integrity_tests.sql
+createdb bankdb
+psql -d bankdb -f database\01_schema.sql
+psql -d bankdb -f database\02_sample_data.sql
+psql -d bankdb -f database\03_demo_queries.sql
+psql -d bankdb -f database\04_integrity_tests.sql
 ```
 
 The schema script is intended for a new database, not for repeated execution
